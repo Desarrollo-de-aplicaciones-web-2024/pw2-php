@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Ejercicio 15</title>
+
+        <link type="text/css" rel="stylesheet" href="estilos.css"/>
+    </head>
+
+    <body>
+        <div class="ejercicio">
+            <h1>PHP</h1>
+            <p>Los ejercicios están diseñados para que pongas en práctica los conceptos básicos del lenguaje de programación PHP.
+               En cada uno de ellos necesitarás crear un documento php para desarrollar la solución.
+               Dicho documento se vincula mediante la liga "Resultado" que aparece en la mayoría de los ejercicios y la cual apunta al archivo ejercicioX.php, donde X es el número del ejercicio.
+            </p>
+        </div>
+
+        <div class="ejercicio">
+            <h2>Ejercicio 1</h2>
+
+            <p>Crea un script de php que muestre la información completa de configuración usando la función phpinfo()</p>
+
+            <div>
+                <a href="ejercicio1.php" class="resultado" target="_blank">Resultado</a>
+            </div>
+        </div>
+
+        <div class="ejercicio">
+            <h2>Ejercicio 2</h2>
+
+            <p>Crea un documento php el cual contenga la variable <code>$var = "Desarrollo web con PHP"</code> y
+            utiliza dicha variable para desplegar su valor dentro de un encabezado nivel 3 (h3).
+            Además crea una liga cuyo texto sea el valor de la misma variable y que al dar clic envíe a la dirección http://php.net/ en una nueva ventana.</p>
+
+            <p>Nota: crea los elementos HTML utilizando sus etiquetas y el texto despliégalo utilizando la sentencia <code>echo</code></p>
+
+            <div class="resultado">
+                <p><em>Resultado esperado</em></p>
+                <h3>Desarrollo con web con PHP</h3>
+                <a href="http://php.net/" target="_blank">Desarrollo con web con PHP</a>
+            </div>
+
+            <a href="ejercicio2.php" class="resultado" target="_blank">Resultado</a>
+        </div>
+
+        <div class="ejercicio">
+            <h2>Ejercicio 3</h2>
+
+            <p>Crea un documento php el cual contenga las siguientes variables:</p>
+
+            <p><code>$ligaHRef = "http://php.net/"<br>$ligaTarget = "_blank"<br>$ligaTitle = "Ir al sitio de PHP"<br>$imagenSrc = "http://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"<br>$imagenWidth = 350<br>$imagenHeight = 210<br>$imagenALT = "Logotipo de PHP"</code></p>
+            <p>Agrega los siguientes elementos HTML al documento:</p>
+
+            &lt;a&gt;&lt;img&gt;&lt;/a&gt;
+
+            <p>Lo que debes hacer es agregar los atributos faltantes a los elementos HTML (ver nombres de las variables PHP) asignándoles el valor de las varibles de PHP correspondientes.</p>
+           <div class="resultado">
+               <p><em>Resultado esperado</em></p>
+               <a href="http://php.net/" target="_blank" title="Ir al sitio de PHP"><img src="http://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" width="350" height="210" alt="Logotipo de PHP"></a>
+            </div>
+
+            <a href="ejercicio3.php" class="resultado" target="_blank">Resultado</a>
+        </div>
+
+        <div class="ejercicio">
+            <h2>Ejercicio 4</h2>
+
+            <p>Crea un documento php el cual imprima resultado de las operaciones aritméticas básicas (suma, resta, multiplicación y división) entre 2 números.</p>
+            <p>Nota: declara 2 variables para los operandos ($numero1 y $numero2) y 4 variables más para los resultados ($suma, $resta, $multiplicacion, $division). Agrega saltos de línea utilizando el elemento HTML br.</p>
+
+           <div class="resultado">
+                <p><em>Resultado esperado</em></p>
+                La suma de 7 más 3 es igual a 10<br>
+                La resta de 7 menos 3 es igual a 4<br>
+                La multiplicación de 7 por 3 es igual a 21<br>
+                La división de 7 entre 3 es igual a 2.333
+            </div>
+
+            <a href="ejercicio4.php" class="resultado" target="_blank">Resultado</a>
+        </div>
+
+        <div class="ejercicio">
+            <h2>Ejercicio 5</h2>
+
+            <p>Crea un documento php el cual reciba en una variable el nombre escrito en el campo de entrada del
+                formulario a continuación. Despliga el nombre escrito en un titulo nivel 1 junto con un saludo, por ejemplo "Hola Rubén".</p>
+            <p>Nota: para recibir el valor escrito en el campo de texto utiliza la variable superglobal $_GET["nombre"]
+                ("nombre" es el nombre del elemento HTML <i>input text</i>).</p>
+
+            <div class="resultado">
+                <p><em>Resultado esperado</em></p>
+                <h3>Escribe tu nombre</h3>
+                <form action="ejercicio5.php" method="get">
+                    Nombre:
+                    <input type="text" name="nombre"><br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+
+        <div class="ejercicio">
+            <h2>Ejercicio 6</h2>
+
+            <p>Crea un documento php el cual imprima el sueldo de cada persona en una tabla. Crea y utiliza las siguientes
+                variables para mostrar el sueldo en la celda de la tabla:</p>
+            <p><code>$ana = 8000<br>$brenda = 10000<br>$carolina = 6000</code></p>
+            <p>Nota: crea toda la tabla utilizando solamente una sentencia <b>echo</b>.</p>
+
+
+                <div class="resultado">
+                    <p><em>Resultado esperado</em></p>
+                    <table>
+                        <tr>
+                            <td>Ana</td>
+                            <td>$8000</td>
+                        </tr>
+                        <tr>
+                            <td>Brenda</td>
+                            <td>$10000</td>
+                        </tr>
+                        <tr>
+                            <td>Carolina</td>
+                            <td>$6000</td>
+                        </tr>
+                    </table>
+                </div>
+            <a href="ejercicio6.php" class="resultado" target="_blank">Resultado</a>
+        </div>
+
+        <div class="ejercicio">
+            <h2>Ejercicio 7</h2>
+            <p>Crea un documento php y utilizando el siguiente pensamiento realiza las actividades que se detallan después:</p>
+            <p><em>"Uso muy poco el rojo. Uso azul, amarillo, un poco de verde, pero especialmente... negro, blanco y gris. Hay una cierta necesidad en mí de comunicarme con los seres humanos. El blanco y el negro es escribir”</em> – Jean Arp (1886 – 1966), artista.</p>
+            <p>Actividades:</p>
+            <ol>
+                <li>Define un arreglo llamado $colores el cual contenga todos los colores que se mencionan en la frase (sin repetirlos).</li>
+                <li>Despliega la frase usando una sola vez la sentencia echo y sustituye los colores por el arreglo $colores indicando el índice del color correspondiente.</li>
+            </ol>
+
+            <a href="ejercicio7.php" class="resultado" target="_blank">Resultado</a>
+        </div>
+
+        <div class="ejercicio">
+            <h2>Ejercicio 8</h2>
+            <p>Realiza las siguientes acciones sobre el arreglo $frutas:</p>
+            <p><code>$frutas = array("naranja", "platano", "uva", "pera", "sandia", "manzana");</code></p>
+            <ul>
+                <li>Ordénalo ascendentemente.</li>
+                <li>Elimina el primer elemento.</li>
+                <li>Agrega al final dos frutas más (no repetidas, las que gustes).</li>
+                <li>Ordénalo descendentemente.</li>
+                <li>Imprime en un parráfo el texto "El arreglo $frutas tiene X elementos". Sustituye X por la cantidad de elementos (calculado por función)</li>
+                <li>Imprime todo el arreglo utilizando la función print_r().</li>
+            </ul>
+            <p>Nota: busca en la documentación en línea de PHP las funciones internas para cada punto.</p>
+
+            <a href="ejercicio8.php" class="resultado" target="_blank">Resultado</a>
+        </div>
+
+        <div class="ejercicio">
+            <h2>Ejercicio 9</h2>
+            <p>Utilizando los valores de las variables $usuario, $correo, $contraseña1 y $contraseña2 realiza las siguientes acciones:</p>
+            <p><code>$usuario = "Rubén_Sánchez"</code></p>
+            <ul>
+                <li>Convierte todo el texto a minúsculas.</li>
+                <li>Reemplaza todas las vocales con acento a su versión sin acento (é -> e). Diseña tu código para que la conversión aplique a las 5 vocales.</li>
+                <li>Imprime el nuevo valor de $usuario en un párrafo con el texto "Usuario: $usuario".</li>
+            </ul>
+            <hr>
+            <p><code>$correo = "rsanchez@ucc"</code></p>
+            <ul>
+                <li>Valida que tenga solamente un caracter de arroba (@)</li>
+                <li>Valida que tenga al menos un caracter de punto (.)</li>
+                <li>Imprime un párrafo con el texto "E-mail: $email" si $correo supera las reglas anteriores, en caso contrario imprime un párrafo por cada regla explicando por qué no fue superada.</li>
+            </ul>
+            <hr>
+            <p><code>$contraseña1 = "abc12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"<br>$contraseña2 = "abc123"</code></p>
+            <ul>
+                <li>Remueve los espacios en blanco al inicio y final.</li>
+                <li>Valida que $contraseña1 tenga al menos 6 caracteres de largo</li>
+                <li>$contraseña2 sea igual a $contraseña1***</li>
+                <li>Imprime un párrafo con el texto "Contraseña válida" si $contraseña1 y $contraseña2 son válidas respecto a las reglas anteriores, en caso contrario imprime un párrafo por cada regla explicando por qué no fue superada.</li>
+            </ul>
+
+            <p>Nota: busca en la documentación en línea de PHP las funciones internas para cada punto (excepto para el punto con ***).</p>
+
+            <div class="resultado">
+                <p><em>Resultado esperado</em></p>
+                <p>Usuario: ruben_sanchez</p>
+                <p>E-mail: incorrecto, debe tener al menos un punto.</p>
+                <p>Contraseña: la contraseña debe ser de al menos 6 caracteres de largo.</p>
+                <p>Contraseña: las contraseñas no son iguales.</p>
+            </div>
+
+            <a href="ejercicio9.php" class="resultado" target="_blank">Resultado</a>
+
+        </div>
+
+        <div class="ejercicio">
+            <h2>Ejercicio 10</h2>
+
+            <p>Crea un documento php el cual imprima la siguiente secuencia utilizando ciclos:</p>
+            <img src="img/ejercicio10.png" width="238"/>
+
+            <a href="ejercicio10.php" class="resultado" target="_blank">Resultado</a>
+
+            <p>Nota: el color de fuente está <a href="https://www.w3schools.com/colors/colors_rgb.asp" target="_blank" title="Conocer más">especificado en rgb</a> con incrementos en 8 en 8.</p>
+        </div>
+
+        <div class="ejercicio">
+            <h2>Ejercicio 11</h2>
+
+            <p>Crea un documento php el cual imprima la lista de los números impares entre el 1 y 100. Adicionalmente cambia el color de fuente a rojo de los
+                números que sean múltiplos de 3. Realiza este ejercicio utilizando estructuras de control y ciclos.</p>
+            <p>Notas:</p>
+            <ol>
+                <li>Crea la lista utilizando los elementos HTML ul y li.</li>
+                <li>El color de fuente especifícalo en el atributo <code>style</code> del elemento HTML li.</li>
+            </ol>
+
+            <div class="resultado">
+                <p><em>Resultado esperado</em></p>
+                <ul>
+                    <li>1</li>
+                    <li style="color: red">3</li>
+                    <li>5</li>
+                    <li>7</li>
+                    <li style="color: red">9</li>
+                    <li>11</li>
+                    <li>13</li>
+                    <li>...</li>
+                    <li style="color: red">99</li>
+                </ul>
+             </div>
+
+            <a href="ejercicio11.php" class="resultado" target="_blank">Resultado</a>
+        </div>
+
+        <div class="ejercicio">
+            <h2>Ejercicio 12</h2>
+
+            <p>Crea un documento php el cual imprima la siguiente tabla utilizando ciclos. Establece el atributo border="1" a la etiqueta <code>table</code> para agregar los bordes.</p>
+
+            <div class="resultado">
+                <p><em>Resultado esperado</em></p>
+
+                <table border="1">
+                  <tbody>
+                    <tr>
+                      <td>1 * 1 = 1</td>
+                      <td>1 * 2 = 2</td>
+                      <td>1 * 3 = 3</td>
+                      <td>1 * 4 = 4</td>
+                      <td>1 * 5 = 5</td>
+                    </tr>
+                    <tr>
+                      <td>2 * 1 = 2</td>
+                      <td>2 * 2 = 4</td>
+                      <td>2 * 3 = 6</td>
+                      <td>2 * 4 = 8</td>
+                      <td>2 * 5 = 10</td>
+                    </tr>
+                    <tr>
+                      <td>3 * 1 = 3</td>
+                      <td>3 * 2 = 6</td>
+                      <td>3 * 3 = 9</td>
+                      <td>3 * 4 = 12</td>
+                      <td>3 * 5 = 15</td>
+                    </tr>
+                    <tr>
+                      <td>4 * 1 = 4</td>
+                      <td>4 * 2 = 8</td>
+                      <td>4 * 3 = 12</td>
+                      <td>4 * 4 = 16</td>
+                      <td>4 * 5 = 20</td>
+                    </tr>
+                    <tr>
+                      <td>5 * 1 = 5</td>
+                      <td>5 * 2 = 10</td>
+                      <td>5 * 3 = 15</td>
+                      <td>5 * 4 = 20</td>
+                      <td>5 * 5 = 25</td>
+                    </tr>
+                    <tr>
+                      <td>6 * 1 = 6</td>
+                      <td>6 * 2 = 12</td>
+                      <td>6 * 3 = 18</td>
+                      <td>6 * 4 = 24</td>
+                      <td>6 * 5 = 30</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+
+            <a href="ejercicio12.php" class="resultado" target="_blank">Resultado</a>
+        </div>
+
+        <div class="ejercicio">
+            <h2>Ejercicio 13</h2>
+
+            <p>Crea un documento de php el cual contenga una lista desplegable con todos los estados Estados de la República. La primera
+                opción de la lista debe tener por texto "Seleccione una opción" y un valor vacío.</p>
+            <p>Utiliza el arreglo $estados para crear las opciones de la lista. La llave de cada elemento del arreglo debe ser el valor de la opción de la lista y el valor el texto, ejemplo: <br><br> &lt;option value="AGS"&gt;Aguascalientes&lt;/option&gt;.</p>
+
+            <code>$estados = array("AGS" => "Aguascalientes", "BC" => "Baja California", "BCS" => "Baja California Sur",
+            "CHI" => "Chihuahua", "CHS" => "Chiapas", "CMP" => "Campeche", "COA" => "Coahuila", "COL" => "Colima",
+            "DF" => "Distrito Federal", "DGO" => "Durango", "GRO" => "Guerrero", "GTO" => "Guanajuato",
+            "HGO" => "Hidalgo", "JAL" => "Jalisco", "MCH" => "Michoacán", "MEX" => "Estado de México",
+            "MOR" => "Morelos", "NAY" => "Nayarit", "NL" =>"Nuevo León", "OAX" => "Oaxaca", "PUE" => "Puebla",
+            "QR" => "Quintana Roo", "QRO" => "Querétaro", "SIN" => "Sinaloa", "SLP" => "San Luis Potosí",
+            "SON" => "Sonora", "TAB" => "Tabasco", "TLX" => "Tlaxcala", "TMS" => "Tamaulipas", "VER" => "Veracruz",
+            "YUC" => "Yucatán", "ZAC" => "Zacatecas");</code>
+            <div class="resultado">
+                <p><em>Resultado esperado</em></p>
+                <label>Seleccione un estado<br>
+                    <select name="estado">
+                        <option value="">Seleccione una opción</option>
+                        <option value="AGS">Aguascalientes</option>
+                        <option value="BC">Baja Californa</option>
+                        <option value="BCS">Baja Californa SU</option>
+                        <option value="ZAC">Zacatecas</option>
+                    </select>
+                </label>
+            </div>
+
+            <a href="ejercicio13.php" class="resultado" target="_blank">Resultado</a>
+        </div>
+
+
+        <div class="ejercicio">
+            <h2>Ejercicio 14</h2>
+
+            <p>Utiliza el arreglo $temperaturas y realiza lo que se describe a continuación:</p>
+            <p><code>$temperaturas = array(24, 31, 41, 32, 33, 25, 30, 29, 39, 34, 27, 35, 44, 16, 18, 36, 19, 37);</code></p>
+
+            <ul>
+                <li>Calcula la temperatura promedio.</li>
+                <li>Determina las 5 temperaturas más bajas.</li>
+                <li>Determina las 5 temperaturas más altas.</li>
+            </ul>
+
+            <p>Muestra los resultados como se muestra en <em>Resultado esperado</em>.</p>
+
+            <p>Nota: no utilices ciclos ni estructuras de control, en vez utiliza las siguientes :</p>
+            <ul>
+                <li><em>array_sum</em></li>
+                <li><em>count</em></li>
+                <li><em>sort</em></li>
+                <li><em>array_slice</em></li>
+                <li><em>round</em> - redondea a 2 decimales la temperatura promedio</li>
+            </ul>
+
+            <div class="resultado">
+                <p><em>Resultado esperado</em></p>
+                <ul>
+                    <li>La temperatura promedio es de: X</li>
+                    <li>Las 5 temperaturas más bajas: t1, t2, t3, t4 y t5</li>
+                    <li>Las 5 temperaturas más altas: t1, t2, t3, t4 y t5</li>
+                </ul>
+                <p>Nota: Muestra la información utilizando una lista no ordenada</p>
+            </div>
+
+            <a href="ejercicio14.php" class="resultado" target="_blank">Resultado</a>
+        </div>
+
+        <div class="ejercicio">
+            <h2>Ejercicio 15</h2>
+
+            <p>Con la fecha seleccionada en #fecha_a_formatear y utilizando <b>funciones internas</b> produce la siguiente salida:</p>
+
+            <form action="ejercicio15.php" target="_blank" method="get">
+                <input type="date" name="fecha_a_formatear" id="fecha_a_formatear"/>
+                <button type="submit">Resultado</button>
+            </form>
+            <br>
+            <br>
+
+            <div class="resultado">
+                <p><em>Resultado esperado</em></p>
+                <ul>
+                    <li>La fecha <b>25 de Septiembre de 2018</b></li>
+                    <li>siendo el día <b>269</b></li>
+                    <li>cayó en <b>Miércoles</b></li>
+                    <li>de la semana <b>39</b> del año</li>
+                </ul>
+                <p>Nota: la información debe estar en español</p>
+            </div>
+
+        </div>
+    </body>
+</html>
